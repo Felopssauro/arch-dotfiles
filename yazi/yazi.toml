@@ -1,0 +1,23 @@
+[opener]
+text = [
+  # { run = 'kitty $EDITOR "$@"', desc = "Edit with $EDITOR" },
+    { run = '$EDITOR "$@"', block = true, desc = "Edit with $EDITOR" },
+    { run = '$TERMINAL -e $EDITOR "$@"', desc = "Edit with $EDITOR (new terminal)" },
+]
+image = [
+    { run = 'feh "$@"', desc = "View with feh" },
+]
+pdf = [
+    { run = 'zathura "$@"', desc = "Open with Zathura" },
+]
+video = [
+    { run = 'mpv "$@"', desc = "Play with mpv" },
+]
+
+[open]
+rules = [
+    { mime = "text/*", use = "text" },
+    { mime = "image/*", use = "image" },
+    { mime = "application/pdf", use = "pdf" },
+    { mime = "video/*", use = "video" },
+]
