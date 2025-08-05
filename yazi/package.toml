@@ -13,5 +13,10 @@ use = "yazi-rs/plugins:smart-enter"
 rev = "de53d90"
 hash = "56fdabc96fc1f4d53c96eb884b02a5be"
 
+[[plugin.deps]]
+use = "boydaihungst/restore"
+rev = "84f1921"
+hash = "355f163cb374b5c9514aee2b64121678"
+
 [flavor]
 deps = []

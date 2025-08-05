@@ -16,3 +16,18 @@ desc = "Zoom out hovered file"
 on   = "l"
 run  = "plugin smart-enter"
 desc = "Enter the child directory, or open the file"
+
+[[mgr.prepend_keymap]]
+    on = "u"
+    run = "plugin restore"
+    desc = "Restore last deleted files/folders"
+
+[[mgr.prepend_keymap]]
+    on = "U"
+    run = "shell --block -- clear && trash-restore --overwrite"
+    desc = "Restore deleted file (Interactive)"
+# Remove --overwrite if you don't want to overwrite existed files and this will abort restoring when there is existed file.
+
+
+
+
